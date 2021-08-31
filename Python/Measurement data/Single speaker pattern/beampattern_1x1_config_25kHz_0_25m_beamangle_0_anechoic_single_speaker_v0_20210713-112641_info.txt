@@ -1,0 +1,10 @@
+array_config: 1x1
+frequency: 25kHz
+distance: 0_25m
+version: anechoic_single_speaker_v0
+beam_angle: 0
+az_angle_step: 1
+sample_rate: 400000
+num_samples: 4095
+num_samples_loops: 50
+date_time: 20210713-112641.txt

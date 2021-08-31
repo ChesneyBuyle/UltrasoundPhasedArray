@@ -1,0 +1,10 @@
+array_config: 1x10
+frequency: 25kHz
+distance: 0_75m
+version: anechoic_v0
+beam_angle: 30
+az_angle_step: 1
+sample_rate: 400000
+num_samples: 4095
+num_samples_loops: 10
+date_time: 20210713-170330.txt

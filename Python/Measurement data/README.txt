@@ -1,0 +1,1 @@
+All pattern measurements are conducted from -180° to 180° in steps of 1 degree.
