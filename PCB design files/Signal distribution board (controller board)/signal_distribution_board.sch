@@ -10880,6 +10880,10 @@ Updated by Yingchun,Shan 2019-10-22
 <part name="R65" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="1k"/>
 <part name="R66" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="1k"/>
 <part name="GND43" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="R67" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="2.2k"/>
+<part name="GND44" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="R68" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="2.2k"/>
+<part name="GND45" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11768,6 +11772,20 @@ Updated by Yingchun,Shan 2019-10-22
 </instance>
 <instance part="GND43" gate="1" x="-1221.74" y="165.1" smashed="yes">
 <attribute name="VALUE" x="-1224.28" y="162.56" size="1.778" layer="96"/>
+</instance>
+<instance part="R67" gate="G$1" x="-1252.22" y="22.86" smashed="yes" rot="R90">
+<attribute name="NAME" x="-1253.7186" y="19.05" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="-1248.918" y="19.05" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND44" gate="1" x="-1252.22" y="33.02" smashed="yes" rot="R180">
+<attribute name="VALUE" x="-1249.68" y="35.56" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="R68" gate="G$1" x="-1193.8" y="60.96" smashed="yes" rot="R90">
+<attribute name="NAME" x="-1195.2986" y="57.15" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="-1190.498" y="57.15" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND45" gate="1" x="-1193.8" y="50.8" smashed="yes">
+<attribute name="VALUE" x="-1196.34" y="48.26" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -13000,6 +13018,16 @@ Updated by Yingchun,Shan 2019-10-22
 <pinref part="R66" gate="G$1" pin="1"/>
 <wire x1="-1221.74" y1="177.8" x2="-1221.74" y2="167.64" width="0.1524" layer="91"/>
 <junction x="-1221.74" y="177.8"/>
+</segment>
+<segment>
+<pinref part="R67" gate="G$1" pin="2"/>
+<pinref part="GND44" gate="1" pin="GND"/>
+<wire x1="-1252.22" y1="27.94" x2="-1252.22" y2="30.48" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R68" gate="G$1" pin="1"/>
+<pinref part="GND45" gate="1" pin="GND"/>
+<wire x1="-1193.8" y1="55.88" x2="-1193.8" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="I0_B" class="0">
@@ -14559,9 +14587,10 @@ Updated by Yingchun,Shan 2019-10-22
 <pinref part="J18" gate="G$1" pin="9"/>
 </segment>
 <segment>
-<wire x1="-1216.66" y1="66.04" x2="-1201.42" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="-1216.66" y1="66.04" x2="-1193.8" y2="66.04" width="0.1524" layer="91"/>
 <label x="-1211.58" y="66.04" size="1.778" layer="95"/>
 <pinref part="CN7" gate="A" pin="6"/>
+<pinref part="R68" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="SCLK_1" class="0">
@@ -14827,9 +14856,13 @@ Updated by Yingchun,Shan 2019-10-22
 <pinref part="J20" gate="G$1" pin="9"/>
 </segment>
 <segment>
-<wire x1="-1264.92" y1="12.7" x2="-1249.68" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="-1264.92" y1="12.7" x2="-1252.22" y2="12.7" width="0.1524" layer="91"/>
 <label x="-1257.3" y="12.7" size="1.778" layer="95"/>
 <pinref part="CN9" gate="A" pin="4"/>
+<pinref part="R67" gate="G$1" pin="1"/>
+<wire x1="-1252.22" y1="12.7" x2="-1249.68" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="-1252.22" y1="12.7" x2="-1252.22" y2="17.78" width="0.1524" layer="91"/>
+<junction x="-1252.22" y="12.7"/>
 </segment>
 </net>
 <net name="SCLK_5" class="0">

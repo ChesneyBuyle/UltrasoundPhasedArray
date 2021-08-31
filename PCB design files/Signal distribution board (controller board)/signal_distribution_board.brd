@@ -1855,6 +1855,22 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <rectangle x1="0.9517" y1="-0.8491" x2="1.7018" y2="0.8509" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
 </package>
+<package name="R0805" urn="urn:adsk.eagle:footprint:23045/1" library_version="11">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;</description>
+<wire x1="-0.41" y1="0.635" x2="0.41" y2="0.635" width="0.1524" layer="51"/>
+<wire x1="-0.41" y1="-0.635" x2="0.41" y2="-0.635" width="0.1524" layer="51"/>
+<wire x1="-1.973" y1="0.983" x2="1.973" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="1.973" y1="0.983" x2="1.973" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="1.973" y1="-0.983" x2="-1.973" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-1.973" y1="-0.983" x2="-1.973" y2="0.983" width="0.0508" layer="39"/>
+<smd name="1" x="-0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
+<smd name="2" x="0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
+<text x="-0.635" y="1.27" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.635" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="0.4064" y1="-0.6985" x2="1.0564" y2="0.7015" layer="51"/>
+<rectangle x1="-1.0668" y1="-0.6985" x2="-0.4168" y2="0.7015" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.5001" x2="0.1999" y2="0.5001" layer="35"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="C0603" urn="urn:adsk.eagle:package:23616/2" type="model" library_version="10">
@@ -1879,6 +1895,12 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <description>CAPACITOR</description>
 <packageinstances>
 <packageinstance name="C1206"/>
+</packageinstances>
+</package3d>
+<package3d name="R0805" urn="urn:adsk.eagle:package:23553/2" type="model" library_version="11">
+<description>RESISTOR</description>
+<packageinstances>
+<packageinstance name="R0805"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -4162,6 +4184,18 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="R" x="13.2" y="74.2" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="12.565" y="72.295" size="1.27" layer="27"/>
 </element>
+<element name="R67" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="2.2k" x="32.7" y="27.75" smashed="yes" rot="R90">
+<attribute name="NAME" x="31.43" y="27.115" size="1.27" layer="25" rot="R90"/>
+<attribute name="POPULARITY" value="86" x="32.7" y="27.75" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="SPICEPREFIX" value="R" x="32.7" y="27.75" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="35.24" y="27.115" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="R68" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="2.2k" x="68" y="71.85" smashed="yes" rot="R90">
+<attribute name="NAME" x="66.73" y="71.215" size="1.27" layer="25" rot="R90"/>
+<attribute name="POPULARITY" value="86" x="68" y="71.85" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="SPICEPREFIX" value="R" x="68" y="71.85" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="70.54" y="71.215" size="1.27" layer="27" rot="R90"/>
+</element>
 </elements>
 <signals>
 <signal name="I7_A">
@@ -5565,6 +5599,8 @@ design rules under a new name.</description>
 <contactref element="R64" pad="1"/>
 <contactref element="R65" pad="1"/>
 <contactref element="R66" pad="1"/>
+<contactref element="R67" pad="2"/>
+<contactref element="R68" pad="1"/>
 </signal>
 <signal name="I0_B">
 <contactref element="U2" pad="9"/>
@@ -7549,9 +7585,10 @@ design rules under a new name.</description>
 <wire x1="74.9" y1="84.5" x2="74.9" y2="85.6" width="0.254" layer="16"/>
 <via x="77.9" y="81.8" extent="1-16" drill="0.35"/>
 <wire x1="77.9" y1="81.8" x2="77.9" y2="77.78" width="0.254" layer="1"/>
-<wire x1="77.9" y1="77.78" x2="74.02" y2="74.1" width="0.254" layer="1"/>
+<wire x1="77.9" y1="77.78" x2="74.113403125" y2="74.1885875" width="0.254" layer="1"/>
 <contactref element="J17" pad="9"/>
 <contactref element="J1" pad="9"/>
+<wire x1="74.113403125" y1="74.1885875" x2="74.02" y2="74.1" width="0.254" layer="1"/>
 <wire x1="18.98" y1="94.39" x2="18.98" y2="96.48" width="0.254" layer="16"/>
 <wire x1="18.98" y1="96.48" x2="19.5" y2="97" width="0.254" layer="16"/>
 <wire x1="78.48" y1="94.78" x2="78.48" y2="94.39" width="0.254" layer="16"/>
@@ -7574,6 +7611,9 @@ design rules under a new name.</description>
 <via x="96.95" y="80.55" extent="1-16" drill="0.35"/>
 <wire x1="96.95" y1="80.55" x2="96.5128" y2="80.1128" width="0.254" layer="1"/>
 <wire x1="96.95" y1="80.55" x2="96.6" y2="80.9" width="0.254" layer="1"/>
+<contactref element="R68" pad="2"/>
+<wire x1="68" y1="72.8" x2="72.724815625" y2="72.8" width="0.254" layer="1"/>
+<wire x1="72.724815625" y1="72.8" x2="74.113403125" y2="74.1885875" width="0.254" layer="1"/>
 </signal>
 <signal name="SCLK_1">
 <contactref element="J6" pad="11"/>
@@ -8078,6 +8118,9 @@ design rules under a new name.</description>
 <wire x1="2.956" y1="18.98" x2="2.386" y2="19.55" width="0.254" layer="16"/>
 <wire x1="21.5" y1="3.036" x2="21.5" y2="5.59" width="0.254" layer="16"/>
 <wire x1="21.5" y1="5.59" x2="21.52" y2="5.61" width="0.254" layer="16"/>
+<contactref element="R67" pad="1"/>
+<wire x1="28.52" y1="26.84" x2="32.66" y2="26.84" width="0.254" layer="1"/>
+<wire x1="32.66" y1="26.84" x2="32.7" y2="26.8" width="0.254" layer="1"/>
 </signal>
 <signal name="SCLK_5">
 <contactref element="J14" pad="9"/>
