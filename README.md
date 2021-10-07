@@ -7,7 +7,7 @@ A low-cost, narrowband ultrasound phased array system for narrowbeam transmissio
 The design features wide bandwidth MEMS loudspeakers (UT-P 2019, USound) with very small dimensions (5 x 7 mm). Dense loudspeaker arrays with small interelement spacing can be constructed, enabling grating lobe free beam patterns at high frequency. The current prototype can support up to 64 MEMS speakers. The amplitude and phase of each loudspeaker stage can be controlled with high resolution, respectively with 10-bit and 12-bit. The array itself is constructed using a 3D printer. 
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ChesneyBuyle/UltrasoundPhasedArray/main/Photos/loudspeaker%20array.jpg" width=50% height=50%>
+  <img src="https://github.com/ChesneyBuyle/UltrasoundPhasedArray/blob/main/Photos/MEMS%20speaker%20array.jpg" width=50% height=50%>
 </p>
 
 ## System overview
